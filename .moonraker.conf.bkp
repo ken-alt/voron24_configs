@@ -25,7 +25,7 @@ cors_domains =
 [history]
 
 [update_manager]
-channel = dev
+channel = stable
 refresh_interval = 168
 
 [update_manager mainsail-config]
@@ -68,6 +68,12 @@ virtualenv = ~/.KlipperScreen-env
 requirements = scripts/KlipperScreen-requirements.txt
 system_dependencies = scripts/system-dependencies.json
 managed_services = KlipperScreen
+
+[update_manager led_effect]
+type = git_repo
+path = ~/klipper-led_effect
+origin = https://github.com/julianschill/klipper-led_effect.git
+is_system_service = False
 
 [spoolman]
 server = http://192.168.1.175:7912
